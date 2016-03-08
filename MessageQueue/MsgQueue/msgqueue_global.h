@@ -1,0 +1,12 @@
+#ifndef MSGQUEUE_GLOBAL_H
+#define MSGQUEUE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MSGQUEUE_LIBRARY)
+#  define MSGQUEUESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MSGQUEUESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MSGQUEUE_GLOBAL_H
